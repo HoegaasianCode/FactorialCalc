@@ -9,15 +9,15 @@ namespace FactorialCalc
             Console.Write(CalcFactorial(5)); // 120
         }
 
-        private static int CalcFactorial(int x)
+        private static int CalcFactorial(int n)
         {
             int factorSum = 1;
-            int x1;
-            while (x >= 2)
+            int temp;
+            while (n >= 2)
             {
-                x1 = x * (x - 1);
-                factorSum *= x1;
-                x -= 2;
+                temp = n * (n - 1);
+                factorSum *= temp;
+                n -= 2;
             }
             return factorSum;
         }
