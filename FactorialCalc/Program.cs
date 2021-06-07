@@ -13,7 +13,7 @@ namespace FactorialCalc
         {
             int factorSum = 1;
             int temp;
-            while (n >= 2)
+            while (n > 2)
             {
                 temp = n * (n - 1);
                 factorSum *= temp;
